@@ -1,0 +1,114 @@
+body{
+
+	background-color:#FF9800;
+	background:url(https://wallpapersmug.com/download/3840x2400/5e08a0/graffiti-art-bright-street-wall.jpg);
+	background-size: 100%;
+}
+
+img { width: 50%; } 
+
+.logo{ 
+	margin: 0 auto 0;
+    width: 350px;
+	margin-top: 100px;
+background-color: black;
+}
+
+.logo img{width: 100%;}
+
+.container{
+}
+
+.col{
+}
+
+.col-6{
+	height: 60px;
+}
+
+.row{
+	margin-top: 10px;
+}
+
+
+/* search bar code */
+
+#searchbox{
+	background: #fff;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    z-index: 3;
+    height: 44px;
+    margin: 0 auto 0;
+    width: 85%;
+    float: left;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-size:22px;
+    padding: 0px 20px;
+}
+
+
+.btn-primary {
+	border-radius: 0px;
+	height:44px;
+	border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* Artwork container */
+.artwork-container{
+	width: 100%;
+	border:solid;
+	background-color: white;
+	height: 100%;
+}
+
+.artwork-box{
+	border:solid;
+	width: 32%;
+	float:left;
+	margin:5px;
+}
+
+/* DEMO-SPECIFIC STYLES */
+
+.typewriter{
+	 margin-top: 40px;
+}
+.typewriter h1 {
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+    background:black;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+
+
+/* Footer*/
+.page-footer{ position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+    line-height: 40px;
+   color: white;
+   text-align: center;}
+
