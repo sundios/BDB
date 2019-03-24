@@ -1,15 +1,31 @@
-#Creating the tables
+#creating Database
+CREATE DATABASE dbart;
 
-CREATE TABLE artwork (
-	a_id INT(11) not null PRIMARY KEY AUTO_INCREMENT,
-    a_title varchar(256) not null,
-    a_artist varchar(256) not null,
-    a_location varchar(256) not null);
+#Creating murals Table 
+CREATE table murals (
+m_id INT(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+title varchar(255) NOT NULL, 
+imageurl varchar(255) NOT NULL,
+about varchar(255) NOT NULL,
+year INT(4),
+a_id INT(11),
+l_id INT(11),
+FOREIGN KEY a_id REFERENCES artist(a_id),
+FOREIGN KEY l_id REFERENCES location(l_id),
+)
 
+#Creating Location Table 
+Create TABLE location(
+l_id int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+country varchar(255)
+city varchar(255) NOT NULL 
+address varchar(255),
+a_number int(10),
+zipcode int(5)
+)
 
-#Adding data to tableS
-
-    INSERT INTO artwork (a_title, a_artist, a_location)
-VALUE ('Girl with ballon' , 'Bansky', 'London','https://c1.staticflickr.com/4/3519/3989510611_5b1e70e459_b.jpg')
-VALUE ('Love is in the air' , 'Bansky', 'London','https://upload.wikimedia.org/wikipedia/en/f/fe/Love_is_in_the_Bin.jpg')
-VALUE ('Pacman' , 'Space invader', 'London','https://londoncallingblogdotnet.files.wordpress.com/2016/04/p1400130.jpg?w=920')
+#Creating Location Artist
+Create TABLE artist(
+a_id int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+name varchar(255) NOT NULL   
+)
