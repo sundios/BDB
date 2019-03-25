@@ -87,7 +87,7 @@ background-color: black;
 }
 
 .card-deck {
-    width: 25%;
+    width: 24%;
     margin: 5px;
     float: left;
   }
@@ -136,13 +136,18 @@ background-color: black;
 
 
 
+@media screen and (max-width: 1200px) {
 
-
+.card-deck{
+  width: 23%;
+}
+   
+}
 
 @media screen and (max-width: 991px) {
 
 .card-deck{
-  width: 30%;
+  width: 47%;
 }
    
 }

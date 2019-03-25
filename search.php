@@ -34,9 +34,9 @@
 				<div class='card'>
 				<img class='card-img-top'src=".$row['a_img'].">
 				<div class='card-body'>
-				<h5 class='card-title'>Title:".$row['a_title']."</h5>
-				<p class='card-text'>Artist:".$row['a_artist']."<p>
-				<p class='card-text'>Location:".$row['a_location']."<p>
+				<h5 class='card-title'><strong>Title:</strong>".$row['a_title']."</h5>
+				<p class='card-text'><strong>Artist:</strong>".$row['a_artist']."<p>
+				<p class='card-text'><strong>Location:</strong>".$row['a_location']."<p>
 				<a href='artwork.php?title=".$row['a_title']."&location=".$row['a_location']."'>
 				<button type='button' class='btn btn-info'>Info</button></a>
 			</div>
