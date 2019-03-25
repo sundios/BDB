@@ -28,10 +28,11 @@ background-color: black;
 
 .row{
 	margin-top: 10px;
+  width: 100%;
 }
 
 
-/* search bar code */
+/* search bar */
 
 #searchbox{
 	background: #fff;
@@ -61,7 +62,8 @@ background-color: black;
 	width: 100%;
 	border:solid;
 	background-color: white;
-	height: 100%;
+  height: 100%;
+  overflow: auto;
 }
 
 .artwork-box{
@@ -70,6 +72,19 @@ background-color: black;
 	float:left;
 	margin:5px;
 }
+
+/*search page*/
+
+.results_txt{
+  border:solid;
+  height: 100px;
+}
+
+.card-deck {
+    width: 20%;
+    margin: 5px;
+    float: left;
+  }
 
 /* DEMO-SPECIFIC STYLES */
 
