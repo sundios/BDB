@@ -4,7 +4,7 @@
 
 <div class="container">
 	<div class="logo">
-		<img src="images/logo2.jpg">
+		<img src="images/logo2.svg">
 	</div>
 	<div class="typewriter">
   <h1>Search a location, artist or year////</h1>

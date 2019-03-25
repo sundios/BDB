@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="698" height="264" viewBox="0 0 698 264">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 96px;
+        fill: #fff;
+        text-anchor: end;
+        font-family: BLACK;
+      }
+    </style>
+  </defs>
+  <text id="STREET" class="cls-1" x="437.982" y="76.888"><tspan x="437.982">STREET</tspan></text>
+  <text id="ART" class="cls-1" x="437.864" y="168.427"><tspan x="437.864">ART</tspan></text>
+  <text id="DB" class="cls-1" x="432.498" y="250.943"><tspan x="432.498">DB</tspan></text>
+</svg>

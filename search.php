@@ -2,34 +2,30 @@
 	include 'header.php'
 ?>
 
-<div class="row">
-    <div class="col">
-      1 of 3
-    </div>
-    <div class="col-6">
-			      <form action="search.php" method="POST">
-			  			<input type="text" name="search" placeholder="Search" id="searchbox">
-			  			<button type="submit" name="submit-search" class="btn btn-primary"><i class="fas fa-search"></i></button>
-					</form>
+<?php include 'searchbar.php'
+?>
 
-    </div>
-    <div class="col">
-      3 of 3
-    </div>
-  </div>
 
+<div class="artwork-container">
+	<div class="container">
 <h1>Search Page</h1>
 <a href="/StreetartDB/">Go back home</a>
-<div class="artwork-container">
-	
 <?php
+
 	if (isset($_POST['submit-search'])) {
 		$search = mysqli_real_escape_string($link, $_POST['search']);
 		$sql = "SELECT * FROM artwork WHERE a_location LIKE '%$search%' OR a_artist LIKE '%$search%' OR a_title LIKE '%$search%' ";
+		$started = microtime(true);
 		$result = mysqli_query($link, $sql);
+		$end = microtime(true);
+		$difference = $end - $started;
+		$queryTime = number_format($difference, 10);
+
 		$queryResult = mysqli_num_rows($result);
 
-		echo "<div class='results_txt'><h2>There are <span class='badge badge-secondary'>" .$queryResult." </span> results!</h2></div>";
+		echo "<div class='results_txt'><h2>There are <span class='badge badge-secondary'>" .$queryResult." </span> results!</h2>";
+		echo "<h6> SQL query took <span class='badge badge-secondary'>$queryTime</span> seconds.</h6>
+</div>";
 
 		if($queryResult > 0) {
 			while ($row = mysqli_fetch_assoc($result)) {
@@ -47,6 +43,8 @@
 			</div>
 			</div>";
 			}
+
+		
 		} else { 
 			echo "<div class='alert alert-warning alert-dismissible fade show' role='alert'>
   <strong> There are no results matching your search! </strong> Please try again.
@@ -55,12 +53,16 @@
   </button>
 </div>";
 		}
+		
 	}
+
 ?>
+
+
 	
 
 </div>
 
-
+</div>
 
 

@@ -1,8 +1,10 @@
+
 body{
 
 	background-color:#FF9800;
 	background:url(https://wallpapersmug.com/download/3840x2400/5e08a0/graffiti-art-bright-street-wall.jpg);
 	background-size: 100%;
+  font-family: 'Montserrat', sans-serif;
 }
 
 img { width: 50%; } 
@@ -16,10 +18,16 @@ background-color: black;
 
 .logo img{width: 100%;}
 
+
+.search_logo{
+  width: 20%;
+}
+
 .container{
 }
 
-.col{
+.col-lg-7{
+  padding-left: 0px;
 }
 
 .col-6{
@@ -76,12 +84,10 @@ background-color: black;
 /*search page*/
 
 .results_txt{
-  border:solid;
-  height: 100px;
 }
 
 .card-deck {
-    width: 20%;
+    width: 25%;
     margin: 5px;
     float: left;
   }
@@ -126,4 +132,36 @@ background-color: black;
     line-height: 40px;
    color: white;
    text-align: center;}
+
+
+
+
+
+
+
+@media screen and (max-width: 991px) {
+
+.card-deck{
+  width: 30%;
+}
+   
+}
+
+@media screen and (max-width: 768px) {
+
+.card-deck{
+  width: 47%;
+}
+
+.search_logo{width: 95%;}
+   
+}
+
+@media screen and (max-width: 576px) {
+
+.card-deck{
+  width: 100%;
+}
+   
+}
 
