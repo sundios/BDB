@@ -13,12 +13,11 @@ Konrad Burchardt
 
 - [Project Queries](#1-Project-Queries)
 - [Tables Print out ](#iTables-Print-out )
-- [Queries examples](#features)
-- [Contributing](#contributing)
-- [Team](#team)
-- [FAQ](#faq)
-- [Support](#support)
-- [License](#license)
+- (Mysql and Outputs](#ii-mysql-queries-and-outputs)
+- [Adding Values to tables](#adding-values-to-our-tables)
+- [Queries examples](#2queries-examples-for-retrieving-data-of-our-application)
+- [Extras](#3extras)
+
 
 
 ## 1 Project Queries
@@ -199,7 +198,6 @@ We will calculate the amount of results using the following
 ```php
 mysqli_num_rows()
 ```
-
 #We will calculate the amount of time the sql query took using the following
 
 ```php
