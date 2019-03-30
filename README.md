@@ -11,39 +11,36 @@ Konrad Burchardt
 
 ## Table of Contents (Optional)
 
-- [Project Queries](#1-Project-Queries)
-- [Tables Print out ](#iTables-Print-out )
-- (Mysql and Outputs](#ii-mysql-queries-and-outputs)
-- [Adding Values to tables](#adding-values-to-our-tables)
-- [Queries examples](#2queries-examples-for-retrieving-data-of-our-application)
-- [Extras](#3extras)
+- [1.Tables Print out](#iTables-Print-out )
+- (2.Mysql queries  and Outputs](#iimysql-queries-and-outputs)
+- [3.Extras](#3extras)
 
 
 
-## 1 Project Queries
+## Project Queries
 
 * Submit (i) a printout of all your tables and (ii) the MySQL log of your queries run against your database.
 
-### (i)Tables Print out 
+### 1.Tables Print out 
 
-**1.Database name:** dbart2
+**Database name:** dbart2
 ![Timeline](http://kburchardt.com/dbcs/dbart.png)
 
-**2.Table name**: Artist
+**- Table name**: Artist
 
 #### Structure
 ![Timeline](http://kburchardt.com/dbcs/artists.png)
 #### Values
 ![Timeline](http://kburchardt.com/dbcs/artist_val.png)
 
-**3.Table name**: location
+**- Table name**: location
 
 #### Structure
 ![Timeline](http://kburchardt.com/dbcs/location.png)
 #### Values
 ![Timeline](http://kburchardt.com/dbcs/location_val.png)
 
-**4.Table name**: murals
+**- Table name**: murals
 
 #### Structure
 ![Timeline](http://kburchardt.com/dbcs/murals.png)
@@ -51,9 +48,9 @@ Konrad Burchardt
 #### Values
 ![Timeline](http://kburchardt.com/dbcs/murals_val.png)
 
-### (ii) Mysql Queries and outputs
+### 2. Mysql Queries and outputs
 
-#### 1.Adding Values to our tables
+####- Adding Values to our tables
 
 * Adding Values to artist
 ```mysql
@@ -105,7 +102,7 @@ VALUES
 
 ```
 
-#### 2.Queries examples for retrieving data of our application
+####- Queries examples for retrieving data of our application
 
 A user wants to search all murals that are located in Los Angeles
 ```mysql
