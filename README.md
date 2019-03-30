@@ -25,21 +25,21 @@
 **Database name:** dbart2
 ![Timeline](http://kburchardt.com/dbcs/dbart.png)
 
-** Table name**: Artist
+**Table name**: Artist
 
 #### Structure
 ![Timeline](http://kburchardt.com/dbcs/artists.png)
 #### Values
 ![Timeline](http://kburchardt.com/dbcs/artist_val.png)
 
-** Table name**: location
+**Table name**: location
 
 #### Structure
 ![Timeline](http://kburchardt.com/dbcs/location.png)
 #### Values
 ![Timeline](http://kburchardt.com/dbcs/location_val.png)
 
-** Table name**: murals
+**Table name**: murals
 
 #### Structure
 ![Timeline](http://kburchardt.com/dbcs/murals.png)
