@@ -14,15 +14,6 @@ FOREIGN KEY (a_id) REFERENCES artist(a_id),
 FOREIGN KEY (l_id) REFERENCES location(l_id)
 );
 
-
-CREATE TABLE Orders (
-    OrderID int NOT NULL,
-    OrderNumber int NOT NULL,
-    PersonID int,
-    PRIMARY KEY (OrderID),
-    FOREIGN KEY (PersonID) REFERENCES Persons(PersonID)
-);
-
 #Creating Location Table 
 Create TABLE location(
 l_id int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
