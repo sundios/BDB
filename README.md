@@ -11,10 +11,9 @@ Konrad Burchardt
 
 ## Table of Contents (Optional)
 
-- [1.Tables Print out](#iTables-Print-out )
-- (2.Mysql queries  and Outputs](#iimysql-queries-and-outputs)
+- [1.Tables Print out](#1tables-print-out)
+- (2.Mysql queries  and Outputs](#2-mysql-queries-and-outputs)
 - [3.Extras](#3extras)
-
 
 
 ## Project Queries
