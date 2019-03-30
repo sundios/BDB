@@ -1,5 +1,5 @@
 #creating Database
-CREATE DATABASE dbart;
+CREATE DATABASE dbart2;
 
 #Creating murals Table 
 CREATE table murals (
