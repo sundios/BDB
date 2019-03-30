@@ -4,8 +4,8 @@
 
 # Big Databases & Cloud Services Assignment 3
 # Authors
-Margaret Sant 
-Konrad Burchardt
+- Margaret Sant 
+- Konrad Burchardt
 
 
 
