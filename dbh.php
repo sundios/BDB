@@ -1,6 +1,6 @@
 
  <?php
-$link = mysqli_connect('localhost', 'root', 'root', 'dbart');
+$link = mysqli_connect('localhost', 'root', 'root', 'dbart2');
 
 if (!$link) {
     die('Connect Error (' . mysqli_connect_errno() . ') ' . mysqli_connect_error());

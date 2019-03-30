@@ -29,3 +29,29 @@ Create TABLE artist(
 a_id int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
 name varchar(255) NOT NULL   
 )
+
+
+#quering add the ids?
+
+
+ select *
+ from murals, location , artist
+ where country LIKE '%$search%'	city LIKE '%$search%' OR 
+ address LIKE '%$search%' OR a_number LIKE '%$search%' OR
+ zipcode LIKE '%$search%' OR title LIKE '%$search%'	OR 
+ imageurl LIKE '%$search%' OR about LIKE '%$search%' OR
+ LIKE '%$search%' year
+
+
+
+#this is the code for searching on multiple tables. (https://stackoverflow.com/questions/6574564/php-mysql-search-multiple-tables-using-a-keyword)
+
+
+ "(SELECT content, title, 'msg' as type FROM messages WHERE content LIKE '%" . 
+           $keyword . "%' OR title LIKE '%" . $keyword ."%') 
+           UNION
+           (SELECT content, title, 'topic' as type FROM topics WHERE content LIKE '%" . 
+           $keyword . "%' OR title LIKE '%" . $keyword ."%') 
+           UNION
+           (SELECT content, title, 'comment' as type FROM comments WHERE content LIKE '%" . 
+           $keyword . "%' OR title LIKE '%" . $keyword ."%')";
