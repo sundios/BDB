@@ -25,21 +25,21 @@
 **Database name:** dbart2
 ![Timeline](http://kburchardt.com/dbcs/dbart.png)
 
-**- Table name**: Artist
+** Table name**: Artist
 
 #### Structure
 ![Timeline](http://kburchardt.com/dbcs/artists.png)
 #### Values
 ![Timeline](http://kburchardt.com/dbcs/artist_val.png)
 
-**- Table name**: location
+** Table name**: location
 
 #### Structure
 ![Timeline](http://kburchardt.com/dbcs/location.png)
 #### Values
 ![Timeline](http://kburchardt.com/dbcs/location_val.png)
 
-**- Table name**: murals
+** Table name**: murals
 
 #### Structure
 ![Timeline](http://kburchardt.com/dbcs/murals.png)
@@ -49,7 +49,7 @@
 
 ### 2. Mysql Queries and outputs
 
-####- Adding Values to our tables
+#### Adding Values to our tables
 
 * Adding Values to artist
 ```mysql
@@ -101,7 +101,7 @@ VALUES
 
 ```
 
-####- Queries examples for retrieving data of our application
+#### Queries examples for retrieving data of our application
 
 A user wants to search all murals that are located in Los Angeles
 ```mysql
@@ -135,6 +135,7 @@ ON a.a_id=m.a_id
 ![Timeline](http://kburchardt.com/dbcs/artistmurals.png)
 
 A user wants to check the number of mural results for their search. 
+
 ** _Note: We will use a php element that will help giving us this on our application. This query is only an example._ ***
 
 ```mysql
