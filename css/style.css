@@ -7,9 +7,9 @@ body{
   font-family: 'Montserrat', sans-serif;
 }
 
-img { width: 50%; } 
+img { width: 50%; }
 
-.logo{ 
+.logo{
 	margin: 0 auto 0;
     width: 350px;
 	margin-top: 100px;
@@ -38,7 +38,27 @@ background-color: black;
 	margin-top: 10px;
   width: 100%;
 }
-
+.jumbotron {
+	color: #e9ecef;
+	background: #212529;
+	border-radius: 25px;
+	box-shadow: 0 0 12px 9px #141414;
+}
+.jumbotron h2{
+	font-size: 1.5rem;
+}
+.pageTitle {
+	color:#e9ecef;
+	text-shadow: 2px 4px 4px #141414;
+}
+.display-4 {
+	font-size: 2.6rem;
+	font-style: italic;
+}
+.jumbotron-fluid {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
 
 /* search bar */
 
@@ -76,22 +96,26 @@ background-color: black;
 
 .artwork-container2{
   width: 100%;
-  border:solid;
-  background-color: white;
   height: 100%;
-  
+
 }
 
 .artwork-box{
-	border:solid;
+	box-shadow: 0 0 12px 9px #141414;
 	width: 100%;
 	float:left;
 	margin:5px;
+	border-radius: 25px;
+	padding-bottom: 10rem;
+}
+
+img {
+	border-radius: 25px;
 }
 
 .artwork-box img { width: 100%; }
 
-.leftp 
+.leftp
 {float: left;}
 
 /*search page*/
@@ -118,7 +142,7 @@ background-color: black;
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .15em; /* Adjust as needed */
-  animation: 
+  animation:
     typing 3.5s steps(30, end),
     blink-caret .5s step-end infinite;
     background:black;
@@ -154,7 +178,7 @@ background-color: black;
 .card-deck{
   width: 23%;
 }
-   
+
 }
 
 @media screen and (max-width: 991px) {
@@ -162,7 +186,7 @@ background-color: black;
 .card-deck{
   width: 47%;
 }
-   
+
 }
 
 @media screen and (max-width: 768px) {
@@ -172,7 +196,7 @@ background-color: black;
 }
 
 .search_logo{width: 95%;}
-   
+
 }
 
 @media screen and (max-width: 576px) {
@@ -180,6 +204,5 @@ background-color: black;
 .card-deck{
   width: 100%;
 }
-   
-}
 
+}
