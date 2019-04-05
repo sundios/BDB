@@ -2,7 +2,7 @@
 body{
 
 	background-color:#FF9800;
-	background:url(https://wallpapersmug.com/download/3840x2400/5e08a0/graffiti-art-bright-street-wall.jpg);
+	background:url(../images/background.jpg);
 	background-size: 100%;
   font-family: 'Montserrat', sans-serif;
 }
@@ -74,12 +74,25 @@ background-color: black;
   overflow: auto;
 }
 
+.artwork-container2{
+  width: 100%;
+  border:solid;
+  background-color: white;
+  height: 100%;
+  
+}
+
 .artwork-box{
 	border:solid;
-	width: 32%;
+	width: 100%;
 	float:left;
 	margin:5px;
 }
+
+.artwork-box img { width: 100%; }
+
+.leftp 
+{float: left;}
 
 /*search page*/
 

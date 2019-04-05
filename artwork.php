@@ -22,43 +22,31 @@
   <h1> Artwork Page</h1>
 
 
-  <div class="artwork-container">
-  	<div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="..." class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
+  <div class="artwork-container2">
+  
 	<?php
 		$title= mysqli_real_escape_string($link, $_GET['title']);
 		$location = mysqli_real_escape_string($link, $_GET['location']);
 
-	$sql = "SELECT * FROM artwork WHERE a_title='$title' AND a_location='$location'";
+	$sql = "SELECT * FROM murals m INNER JOIN location l on l.l_id = m.l_id INNER JOIN artist a  on a.a_id = m.a_id WHERE m.title='$title'";
 	$result = mysqli_query($link, $sql);
 	$queryResults = mysqli_num_rows($result);
 
 	if($queryResults > 0){
 		while($row = mysqli_fetch_assoc($result)){
-			echo "<div class='artwork-box'>
-				<h3>".$row['a_artist']."</h3>
-				<p>".$row['a_title']."</p>
-				<p>".$row['a_location']."</p>
-				<img src=".$row['a_img'].">
+			echo "
+      <div class='jumbotron jumbotron-fluid'>
+        <div class='container'>
+          <h1 class='display-4'>".$row['title']."</h1>
+            <p class='lead'>".$row['about']."</p>
+              <p>".$row['name']."</p>
+              <h2> Where it is located? </h2>
+                <p>".$row['city']. ', ' .$row['country']. "</p>
+                <p>".$row['address']. ', ' .$row['a_number']. "</p>
+        </div>
+      </div>
+      <div class='artwork-box'>		
+				<img src=".$row['imageurl'].">
 			</div>";
 		}
 	}
@@ -70,4 +58,8 @@
 
 </body>
 </html>
+
+
+
+
 

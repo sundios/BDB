@@ -22,7 +22,6 @@
 		$end = microtime(true);
 		$difference = $end - $started;
 		$queryTime = number_format($difference, 10);
-
 		$queryResult = mysqli_num_rows($result);
 
 		echo "<div class='results_txt'><h2>There are <span class='badge badge-secondary'>" .$queryResult." </span> results!</h2>";
@@ -40,7 +39,7 @@
 				<p class='card-text'><strong>Artist:</strong>".$row['name']."<p>
 				<p class='card-text'><strong>Location:</strong>".$row['city']."<p>
 				<p class='card-text'><strong>About:</strong>".$row['about']."<p>
-				<a href='artwork.php?title=".$row['about']."&location=".$row['a_location']."'>
+				<a href='artwork.php?title=".$row['title']."&location=".$row['city']."'>
 				<button type='button' class='btn btn-info'>Info</button></a>
 			</div>
 			</div>
