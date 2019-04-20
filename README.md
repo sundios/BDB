@@ -2,7 +2,7 @@
 # ![alt text][logo]
 [logo]:http://www.komahats.com/Koma_logo_bear.jpg
 
-# Big Databases & Cloud Services Assignment 3
+# Databases
 # Authors
 - Margaret Sant 
 - Konrad Burchardt
