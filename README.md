@@ -9,18 +9,56 @@
 
 
 
-## Table of Contents (Optional)
+## Table of Contents 
 
-- [1. Tables Print out](#1tables-print-out)
-- [2. Mysql queries  and Outputs](#2-mysql-queries-and-outputs)
-- [3. Extras](#3extras)
+- [1. Creating Database and tables](#1creating-databases-and-tables)
+- [2. Tables Print out](#2tables-print-out)
+- [3. Mysql queries  and Outputs](#3-mysql-queries-and-outputs)
+- [4. Extras](#4extras)
+
+### 1. Creating Database and tables
 
 
-## Project Queries
+* Creating Database
+```mysql
+CREATE DATABASE dbart;
+```
 
-* Submit (i) a printout of all your tables and (ii) the MySQL log of your queries run against your database.
+* Creating Location Table
+```mysql
+Create TABLE location(
+l_id int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+country varchar(255),
+city varchar(255) NOT NULL, 
+address varchar(255),
+a_number int(10),
+zipcode int(5)
+);
+```
 
-### 1.Tables Print out 
+* Creating artist Table
+```mysql
+Create TABLE artist(
+a_id int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT ,
+name varchar(255) NOT NULL );
+```
+
+* Creating murals Table 
+```mysql
+CREATE table murals (
+m_id INT(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+title varchar(255) NOT NULL, 
+imageurl varchar(255) NOT NULL,
+about varchar(255) NOT NULL,
+year INT(4),
+a_id INT(11),
+l_id INT(11),
+FOREIGN KEY (a_id) REFERENCES artist(a_id),
+FOREIGN KEY (l_id) REFERENCES location(l_id)
+);
+```
+
+### 2.Tables Print out 
 
 **Database name:** dbart2
 ![Timeline](http://kburchardt.com/dbcs/dbart.png)
@@ -47,7 +85,7 @@
 #### Values
 ![Timeline](http://kburchardt.com/dbcs/murals_val.png)
 
-### 2. Mysql Queries and outputs
+### 3. Mysql Queries and outputs
 
 #### Adding Values to our tables
 
@@ -190,7 +228,7 @@ GROUP BY title
 ###### Output
 No possible output because `%search%` is not a real value.
 
-### 3.Extras
+### 4.Extras
 
 We will calculate the amount of results using the following
 ```php
