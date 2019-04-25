@@ -11,7 +11,7 @@
 
 ## Table of Contents 
 
-- [1. Creating Database and tables](#1creating-databases-and-tables)
+- [1. Creating Database and tables](#1-creating-databases-and-tables)
 - [2. Tables Print out](#2tables-print-out)
 - [3. Mysql queries  and Outputs](#3-mysql-queries-and-outputs)
 - [4. Extras](#4extras)
