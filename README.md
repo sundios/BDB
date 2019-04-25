@@ -54,6 +54,7 @@
 * Adding Values to artist
 ```mysql
 INSERT INTO Artist
+VALUES
 (name,DOB)
 ('Banksy');
 ```
